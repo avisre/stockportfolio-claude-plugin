@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "stockportfolio": {
+      "type": "http",
+      "url": "https://www.stockportfolio.pro/mcp"
+    }
+  }
+}
