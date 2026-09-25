@@ -9,14 +9,20 @@ company has not filed comes back as missing rather than as a plausible estimate.
 
 ## Install
 
-Once this plugin is published in Anthropic's plugin directory, install it from the
-official marketplace:
+Add the marketplace once, then install the plugin:
 
 ```
-/plugin install stockportfolio
+claude plugin marketplace add avisre/stockportfolio-claude-plugin
+claude plugin install stockportfolio@stockportfolio
 ```
 
-To try it before then, load it straight from a checkout:
+Or both in one step from inside a session:
+
+```
+/plugin install stockportfolio --marketplace avisre/stockportfolio-claude-plugin
+```
+
+To try it without installing anything, load it straight from a checkout:
 
 ```
 claude --plugin-dir /path/to/stockportfolio-claude-plugin

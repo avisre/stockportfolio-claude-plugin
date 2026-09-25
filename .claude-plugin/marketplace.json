@@ -1,0 +1,15 @@
+{
+  "name": "stockportfolio",
+  "description": "Filing-grounded financial data for Claude — SEC-verified figures for US-listed companies, from StockPortfolio.pro.",
+  "owner": {
+    "name": "StockPortfolio.pro",
+    "email": "support@stockportfolio.pro"
+  },
+  "plugins": [
+    {
+      "name": "stockportfolio",
+      "source": "./",
+      "description": "SEC-filing-grounded financials for US-listed companies. Every value keeps its fiscal period and the filing it came from; nothing is estimated."
+    }
+  ]
+}
