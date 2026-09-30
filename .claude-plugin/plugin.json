@@ -2,7 +2,7 @@
   "$schema": "https://anthropic.com/claude-code/plugin.schema.json",
   "name": "stockportfolio",
   "displayName": "StockPortfolio.pro — Verified Financial Data",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "SEC-filing-grounded financials for US-listed companies. Every value keeps its fiscal period and the filing it came from; nothing is estimated.",
   "author": {
     "name": "StockPortfolio.pro",
@@ -12,6 +12,8 @@
   "homepage": "https://www.stockportfolio.pro/docs/api-mcp",
   "repository": "https://github.com/avisre/stockportfolio-claude-plugin",
   "license": "MIT",
+  "icon": "./icon.png",
+  "privacyPolicyUrl": "https://www.stockportfolio.pro/privacy",
   "keywords": [
     "finance",
     "sec",
