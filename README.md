@@ -70,6 +70,30 @@ Fund data — ETF and mutual-fund costs, holdings and allocation — is delibera
 part of this connector: it is third-party fund data, not SEC company data. It is
 available on the [REST API](https://www.stockportfolio.pro/docs/api-mcp) instead.
 
+## Data handling
+
+The skills and commands in this plugin send nothing anywhere on their own. Their
+only destination is the connector declared in `.mcp.json` — this service — and no
+file, contact or conversation history is read from your machine. Connecting an
+account opens a sign-in window on our own site; nothing here asks for or shows your
+name, email address or address.
+
+What happens after a call reaches the connector:
+
+- **Nothing you ask through this connector is stored.** Tool arguments — the ticker,
+  the question — are never written to our database, and no prompt or answer text
+  from a connector call is retained. `ask_filings` runs with an empty conversation
+  history and no portfolio context.
+- **Questions are sent to a third-party language-model provider.** `ask_filings`
+  sends the question text to the model provider we use to compose the answer. Every
+  other tool — the company catalog, the financial statements, the filing search and
+  the filing text — is served from our own database and the SEC's, and reaches no
+  third party. Our [privacy policy](https://www.stockportfolio.pro/privacy)
+  discloses this processing.
+- **Request metadata is kept for up to 30 days.** Tool name, success or failure,
+  latency and token counts are recorded for security, abuse prevention and
+  reliability, and expire after 30 days. The arguments are not part of that record.
+
 ## Links
 
 - Setup and pricing for every client: <https://www.stockportfolio.pro/docs/api-mcp>
