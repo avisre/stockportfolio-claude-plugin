@@ -2,7 +2,7 @@
   "$schema": "https://anthropic.com/claude-code/plugin.schema.json",
   "name": "stockportfolio",
   "displayName": "StockPortfolio.pro — Verified Financial Data",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "SEC-filing-grounded financials for US-listed companies. Every value keeps its fiscal period and the filing it came from; nothing is estimated.",
   "author": {
     "name": "StockPortfolio.pro",
