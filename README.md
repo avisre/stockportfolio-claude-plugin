@@ -30,9 +30,9 @@ claude --plugin-dir /path/to/stockportfolio-claude-plugin
 
 On first use Claude opens a sign-in window to connect the server — there is no API
 key to paste, here or anywhere else. You can also start without an account:
-`search_companies` and `sp_health` are free, and an unconnected caller still gets
-**3 research answers and 50 data lookups per rolling 30 days**. Connecting an
-account raises the allowance.
+`sp_health` is free, and an unconnected caller still gets
+**3 research answers and 25 data lookups per rolling 30 days** — company search
+counts as a lookup. Connecting an account raises the allowance.
 
 ## What you can ask
 
@@ -46,7 +46,7 @@ account raises the allowance.
 
 | Tool | What it returns |
 | --- | --- |
-| `search_companies` | A company name or ticker resolved to one US-listed company, with its SEC CIK. Free. |
+| `search_companies` | A company name or ticker resolved to one US-listed company, with its SEC CIK. |
 | `get_company_fundamentals` | Filed figures by fiscal period — revenue, gross profit, operating income, net income, diluted EPS, free cash flow, cash, debt and shares outstanding |
 | `search_filings` | The 10-K / 10-Q / 8-K / 20-F / proxy timeline, by form and date, with EDGAR links |
 | `get_filing` | The text of one filing — a named section such as Risk Factors or MD&A, or a search within it |
